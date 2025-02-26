@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFRA Jewel Box - Luxury Storage Solutions</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #c6a55c, #e2c275);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .animated-border {
+            position: relative;
+            overflow: hidden;
+        }
+        .animated-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, #c6a55c, #e2c275);
+            transition: width 0.3s ease;
+        }
+        .animated-border:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold gradient-text">IFRA</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="animated-border text-gray-700 hover:text-gray-900">Home</a>
+                    <a href="#features" class="animated-border text-gray-700 hover:text-gray-900">Features</a>
+                    <a href="#design" class="animated-border text-gray-700 hover:text-gray-900">Design</a>
+                    <a href="#contact" class="px-4 py-2 rounded-full bg-gradient-to-r from-[#c6a55c] to-[#e2c275] text-white hover:shadow-lg transition-shadow">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-12 md:pt-32 md:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-6xl font-bold gradient-text mb-6">Luxury Redefined</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Experience the perfect fusion of elegance and functionality with IFRA Jewel Box.</p>
+                <div class="mt-12 flex justify-center gap-4">
+                    <button class="px-8 py-3 rounded-full bg-gradient-to-r from-[#c6a55c] to-[#e2c275] text-white hover:shadow-lg transition-shadow">Explore Collection</button>
+                    <button class="px-8 py-3 rounded-full border-2 border-[#c6a55c] text-[#c6a55c] hover:shadow-lg transition-shadow">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-12 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center p-6 hover:shadow-xl transition-shadow rounded-xl">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-[#c6a55c] to-[#e2c275] flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Premium Design</h3>
+                    <p class="text-gray-600">Crafted with precision using the finest materials for an unmatched luxury experience.</p>
+                </div>
+                <div class="text-center p-6 hover:shadow-xl transition-shadow rounded-xl">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-[#c6a55c] to-[#e2c275] flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Secure Storage</h3>
+                    <p class="text-gray-600">Advanced security features to protect your precious belongings with peace of mind.</p>
+                </div>
+                <div class="text-center p-6 hover:shadow-xl transition-shadow rounded-xl">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-[#c6a55c] to-[#e2c275] flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Customizable</h3>
+                    <p class="text-gray-600">Personalize your storage solution to match your unique style and needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jewellery box & display -->
+    <section id="design" class="py-12 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Exquisite Craftsmanship</h2>
+                    <p class="text-gray-600 mb-8">Each IFRA Jewel Box is a masterpiece of design, combining traditional craftsmanship with modern aesthetics. Our attention to detail ensures that every piece not only serves its purpose but becomes a statement of luxury in your space.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="w-6 h-6 rounded-full bg-gradient-to-r from-[#c6a55c] to-[#e2c275] flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            Premium Materials
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-6 h-6 rounded-full bg-gradient-to-r from-[#c6a55c] to-[#e2c275] flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            Modular Design
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-6 h-6 rounded-full bg-gradient-to-r from-[#c6a55c] to-[#e2c275] flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            Sustainable Production
+                        </li>
+                    </ul>
+                </div>
+                <div class="aspect-square bg-gradient-to-br from-[#c6a55c]/20 to-[#e2c275]/20 rounded-2xl flex items-center justify-center">
+                    <div class="w-3/4 h-3/4 border-4 border-[#c6a55c] rounded-xl relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-2xl text-[#c6a55c] font-light">IFRA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Connect With Us</h2>
+                <p class="text-gray-600">Experience luxury storage solutions tailored to your needs.</p>
+            </div>
+            <form class="max-w-xl mx-auto">
+                <div class="grid grid-cols-1 gap-6">
+                    <input type="text" placeholder="Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#c6a55c]">
+                    <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#c6a55c]">
+                    <textarea placeholder="Message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#c6a55c]"></textarea>
+                    <button type="submit" class="w-full px-8 py-3 rounded-lg bg-gradient-to-r from-[#c6a55c] to-[#e2c275] text-white hover:shadow-lg transition-shadow">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-bold gradient-text mb-4 md:mb-0">IFRA</div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Privacy Policy</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Terms of Service</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // GSAP Animations
+        gsap.from('.gradient-text', {
+            duration: 1,
+            y: 30,
+            opacity: 0,
+            ease: 'power3.out'
+        });
+
+        gsap.from('.animated-border', {
+            duration: 1,
+            y: 20,
+            opacity: 0,
+            stagger: 0.2,
+            ease: 'power3.out'
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
